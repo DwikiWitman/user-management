@@ -35,12 +35,12 @@
 							<h2>Please Sign In</h2>
 							<hr class="colorgraph">
 							<div class="form-group">
-								<input type="email" name="email" id="email"
-									class="form-control input-lg" placeholder="Email Address">
+								<input type="email" name="email" required id="email"
+									class="form-control input-lg" placeholder="Email Address" >
 							</div>
 							<div class="form-group">
-								<input type="password" name="password" id="password"
-									class="form-control input-lg" placeholder="Password">
+								<input type="password" name="password" required id="password"
+									class="form-control input-lg" placeholder="Password" >
 							</div>
 							<hr class="colorgraph">
 							<div class="row">

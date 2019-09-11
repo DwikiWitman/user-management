@@ -2,16 +2,18 @@
 Java version 1.7 or 1.8
 Using this framework: jsp servlet jdbc mysql bootstrap materialize
 
+![Capture2.PNG](https://github.com/DwikiWitman/user-management/blob/master/Capture2.PNG)
+
 Web application that can do these things at the minimum
-1. Login/Logout
+1. Login/Logout.
    User who has 'Active' status can login to system. 'Inactive' one couldn't login.
-2. Create user (email, password, name, role, status = Active/Inactive)
+2. Create user (email, password, name, role, status = Active/Inactive).
    Administrators can do anything.
-3. List user
+3. List user.
    Administrators can do anything.
-4. Edit user
+4. Edit user.
    Administrators can do anything, non administrators can only view, the only thing a non Administrator can edit/write is their own name and password 
-5. Delete user
+5. Delete user.
    Administrators can do anything.
    
 How to use:
