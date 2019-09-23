@@ -11,7 +11,7 @@ import java.util.List;
 import net.example.usermanagement.model.User;
 
 /**
- * AbstractDAO.java This DAO class provides CRUD database operations for the
+ * UserDAO.java This DAO class provides CRUD database operations for the
  * table users in the database.
  * 
  * @author Dwiki Witman

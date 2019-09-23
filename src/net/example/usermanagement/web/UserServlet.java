@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import net.example.usermanagement.dao.UserDAO;
+import net.example.usermanagement.dao.UserDAOHibernate;
 import net.example.usermanagement.model.User;
 
 /**
@@ -26,10 +27,10 @@ import net.example.usermanagement.model.User;
 @WebServlet("/")
 public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private UserDAO userDAO;
+	private UserDAOHibernate userDAO;
 	
 	public void init() {
-		userDAO = new UserDAO();
+		userDAO = new UserDAOHibernate();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
