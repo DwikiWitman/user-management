@@ -1,4 +1,12 @@
 package net.example.usermanagement.model;
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * User.java
@@ -6,12 +14,30 @@ package net.example.usermanagement.model;
  * @author Dwiki Witman
  *
  */
-public class User {
+
+// Note: The Annotations is for Hibernate DAO
+
+@Entity
+@Table(name="Users")
+public class User implements Serializable {
+	@Id
+	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	protected int id;
+	
+	@Column(name = "name")
 	protected String name;
+	
+	@Column(name = "email")
 	protected String email;
+	
+	@Column(name = "password")
 	protected String password;
+	
+	@Column(name = "role")
 	protected String role;
+	
+	@Column(name = "status")
 	protected String status;
 	
 	public User() {

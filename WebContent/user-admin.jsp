@@ -9,9 +9,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+	
 	<style><%@include file="/resources/css/bootstrap.min.css"%></style>
 	<script><%@include file="/resources/js/jquery-3.4.1.min.js" %></script>
 	<script><%@include file="/resources/js/bootstrap.min.js" %></script>
+
 	
 	<style type="text/css">
     body {
@@ -234,6 +236,36 @@
             </div>
         </div>
     </div> 
-	      
+	
+	
+	
+	
+	<!-- 
+	<div id="vue-test">
+	  <div v-for="item in items" :key="item.id">    
+	    <p>Item id={{item.id}}, jobItemStatus = {{item.jobItemStatus}}</p>  
+	  </div>
+	</div>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	
+	<script>    
+	var vueItems = new Vue({
+	    el: '#vue-test',
+	    data: {
+	        items : []
+	    },
+	    mounted: function(){
+	        <c:forEach items="${listUser}" var="item" varStatus="status"> 
+	            this.items = this.items.concat({
+	                id: ${item.id}, 
+	                receptionDate : "${item.id}", 
+	                deliveryDate : "${item.name}", 
+	                jobItemStatus : "${item.email}"
+	                });             
+	        </c:forEach>
+	    }
+	});
+	</script> -->
+	
 </body>
 </html>
